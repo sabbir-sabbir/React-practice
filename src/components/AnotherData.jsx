@@ -13,7 +13,7 @@ function AnotherData() {
       <section>
         {
             fakeData.map((item) => (
-                <div key={item.id}>
+                <div className='grid grid-cols-3 gap-5 px-5 py-5' key={item.id}>
                      <h1>{item.name}</h1>
 
                      <div>
