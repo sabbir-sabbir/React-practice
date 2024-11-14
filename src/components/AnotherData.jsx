@@ -13,8 +13,8 @@ function AnotherData() {
       <section>
         {
             fakeData.map((item) => (
-              <div className="bg-red-500 grid grid-cols-1 sm:grid-cols-2 gap-4 p-4" key={item.id}>
-              <div className="bg-white p-4 rounded shadow-md grid grid-rows-2">
+              <div className="bg-red-500 grid  grid-cols-3 gap-5 p-4 h-60" key={item.id}>
+              <div className="bg-white p-4 rounded shadow-md">
                 <div>
                   <h1 className="text-lg font-bold">{item.name}</h1>
                   <p>{item.email}</p>
