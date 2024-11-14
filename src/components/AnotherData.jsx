@@ -13,16 +13,21 @@ function AnotherData() {
       <section>
         {
             fakeData.map((item) => (
-                <div className='grid grid-cols-3 gap-5 px-5 py-5' key={item.id}>
-                     <h1>{item.name}</h1>
-
-                     <div>
-                        <p>{item.email}</p>
-                        <p>{item.address}</p>
-                        <p>{item.company}</p>
-                     </div>
-                     <p>{item.phone}</p>
+              <div className="bg-red-500 grid grid-cols-1 sm:grid-cols-2 gap-4 p-4" key={item.id}>
+              <div className="bg-white p-4 rounded shadow-md grid grid-rows-2">
+                <div>
+                  <h1 className="text-lg font-bold">{item.name}</h1>
+                  <p>{item.email}</p>
+                  <p>{item.address}</p>
+                  <p>{item.company}</p>
+                  <p>{item.phone}</p>
                 </div>
+                <div className="flex items-center justify-end">
+                  <button className="bg-green-400 text-white px-4 py-2 rounded">Add to card</button>
+                </div>
+              </div>
+            </div>
+            
             ))
         }
       </section>
