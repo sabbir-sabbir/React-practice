@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import SingleUserData from './components/SingleUserData'
 import './App.css'
+import AnotherData from './components/AnotherData'
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
           singleData = {singleData}
           ></SingleUserData>)
          }
+      </div>
+      <div>
+        <AnotherData></AnotherData>
       </div>
     </>
   )
