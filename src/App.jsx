@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import SingleUserData from './components/SingleUserData'
 import './App.css'
 import AnotherData from './components/AnotherData'
-import Products from './components/Products'
+
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
       <div>
         <AnotherData></AnotherData>
       </div>
-      <Products></Products>
+     
     </>
   )
 }
